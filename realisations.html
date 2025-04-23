@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Dorcelia Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Realisations</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Accueil</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="realisations.html">Realisations</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="">Contacts</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Realisations</a>
+                <a href="">Contacts</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="reaa.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Bienvenue sur<span> Realisations</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">je suis <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Découvrez ici quelques-uns des projets que j’ai réalisés avec passion et rigueur. Chaque réalisation reflète mon engagement à fournir un travail de qualité, en mettant l’accent sur la créativité, l’efficacité et l’expérience utilisateur. Du concept à la concrétisation, je m’investis pleinement pour transformer les idées en résultats concrets et fonctionnels.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://www.facebook.com/profile.php?id=100083896895424" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://www.instagram.com/kd.daniella/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/dorcelia-koumba-koumba-9b7215345/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                          <a href="https://github.com/tonprofil" target="_blank">
+                            <i class="fab fa-github"></i>
+                          </a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button><a href="https://dev-houseplan.pantheonsite.io/">CKDO Drive</a>
+                        </button>
+                        <button><a href="https://dev-planpro.pantheonsite.io/">PlanPRO</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
